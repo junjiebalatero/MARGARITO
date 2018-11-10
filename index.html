@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <title>Junjie | Web</title>
-
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
          <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
@@ -82,16 +82,19 @@
                     </div>
                 </nav>
 
-             <h3>Image Display Sample</h3>
+             <h4>Image Display Sample</h4>
                 <p>                    
                     <p><img src="https://gateway.ipfs.io/ipfs/QmNgoacgbARoSn9vhAPYdDMzSnsow7dFCfHzeZKftJ1hRD" width="250" height="250"></p>
-                </p><h4>
-                <p>This is an example of a decentralize website it can display images, videos, music and any other files. Each computer are called "node" and all nodes were connected broadcasting your files 24/7, your files are immutable, excellent speed in displaying in your browser and it's free. No more paying a web hosting services we don't need them anymore.</p></h4>
+                </p>
+                <h5>
+                <p>This is an example of a decentralize(distributed) website that can display images, videos, music and any other files. Each computer were called "node" and all nodes were connected broadcasting your files 24/7, your files are immutable, excellent speed in displaying in your browser and it's free. No more paying a web hosting services(HTTP Protocol) those were the good old days. Now we don't need them anymore.
+                </p>
+                </h5>
 
                 <div class="line"></div>
 
-                <h3>Other Files in JSON Format Display Sample</h3>
-                <p><pre><h4>                    
+                <h4>Other Files in JSON Format Display Sample</h4>
+                <p><pre><h5>                    
         {
           "Ravencoin Asset Name":"MARGARITO",
           "Total Circulating Supply":"20,000,000,000 MARGARITO",
@@ -106,29 +109,69 @@
           "issuer": "Margarito V. Balatero Jr.", 
           "website url": "https://junjiebalatero.github.io/MARGARITO/"
         }
-                </h4>
+                </h5>
                 </pre>
                 </p>
 
                 <div class="line"></div>
 
-                <h3>Play Music Sample</h3>
+                <h4>Play Music Sample</h4>
     
                 <p><img src="https://ipfs.io/ipfs/QmRiKuqkNurihVz8z6XDPrXywemijmKPtgDVzYwiuHziYU" width="285" height="285"></p>
-                <h4>Song Title: Everything</h4>
+                <h4>
+                <p>
+                    Song Title: Everything
+                </p>    
+                </h4>
                   <audio id="myTune">
                   <source src="https://ipfs.io/ipfs/QmcHNzR22t5vF7Xkh5bew2dwgB4W6Ksr89mU5TT8Q6Berk">                  
                   </audio> 
                   <button onclick="document.getElementById('myTune').play()">Play Music</button>
                   <button onclick="document.getElementById('myTune').pause()">Pause Music</button>
-                  <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>                
+                  <button onclick="document.getElementById('myTune').pause(); document.getElementById('myTune').currentTime = 0;">Stop Music</button>
+               
+                 <div class="line"></div>
+                <h4>Play Video Sample</h4>
+                <div class="row">
+	                <div class="column">
+		                <video width="320" height="240" controls poster="population.png">
+		                    <source src="https://ipfs.io/ipfs/QmU1GSqu4w29Pt7EEM57Lhte8Lce6e7kuhRHo6rSNb2UaC"> 
+		                </video>  
+	                </div>
+
+	                <div class="column">
+		                <video width="320" height="240" controls poster="balateroMovingLogo.png">
+		                    <source src="https://ipfs.io/ipfs/Qmf3W5etAGxzq1X2ZzfNssdBYkoZoHgrwjr5n8wW8wAxzc"> 
+		                </video>  
+ 					</div> 
+ 					
+</div>
             </div>
         </div>
 <style type="text/css">
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 /*
     DEMO STYLE
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
 
 
 body {
